@@ -158,7 +158,7 @@
           v-if="needField('playbook')"
         ></v-text-field>
 
-        <v-select
+        <v-text-field
           v-model="item.inventory_id"
           :label="fieldLabel('inventory')"
           :items="inventory"
@@ -169,7 +169,7 @@
           required
           :disabled="formSaving"
           v-if="needField('inventory')"
-        ></v-select>
+        ></v-text-field>
 
         <v-select
           v-model="item.repository_id"
